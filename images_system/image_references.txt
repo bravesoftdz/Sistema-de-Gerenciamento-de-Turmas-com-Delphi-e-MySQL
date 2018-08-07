@@ -1,0 +1,2 @@
+bg_original: https://pixabay.com/pt/sala-de-aula-computadores-educa%C3%A7%C3%A3o-1167524/
+icon_original: https://pixabay.com/pt/%C3%ADcone-de-computador-educa%C3%A7%C3%A3o-2429310/

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="5.6.7" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Padrão" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="43311,7076722569" ReportOptions.Description.Text="" ReportOptions.LastChange="43318,5817013542" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="dataSetRelatEst" DataSetName="dataSetRelatEst"/>
+  </Datasets>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" Font.Charset="1" Font.Color="13421772" Font.Height="-13" Font.Name="Arial" Font.Style="0" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxReportTitle Name="ReportTitle1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="94,10235" Left="0" Top="18,89765" Width="718,1107">
+      <TfrxShapeView Name="Shape26" Left="0" Top="0" Width="718,11023622" Height="94,48825"/>
+      <TfrxMemoView Name="Memo1" Left="18,89765" Top="18,814935" Width="264,5671" Height="37,7953" Font.Charset="1" Font.Color="0" Font.Height="-27" Font.Name="@Arial Unicode MS" Font.Style="1" Frame.Color="536870911" ParentFont="False" Text="Lista de Presença"/>
+      <TfrxMemoView Name="dataSetRelatEstest_ofic_desej" Left="18,89765" Top="56,69295" Width="680,3154" Height="18,89765" DataField="est_ofic_desej" DataSet="dataSetRelatEst" DataSetName="dataSetRelatEst" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Fill.BackColor="10027007" ParentFont="False" Text="[dataSetRelatEst.&#34;est_ofic_desej&#34;]"/>
+    </TfrxReportTitle>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="34,01577" Left="0" Top="343,93723" Width="718,1107" ColumnWidth="0" ColumnGap="0" DataSet="dataSetRelatEst" DataSetName="dataSetRelatEst" RowCount="0">
+      <TfrxShapeView Name="Shape22" Left="60,47248" Top="0" Width="279,68522" Height="34,01577"/>
+      <TfrxShapeView Name="Shape21" Left="0" Top="0" Width="60,47248" Height="34,01577"/>
+      <TfrxShapeView Name="Shape1" Left="340,1577" Top="0" Width="37,7953" Height="34,01577"/>
+      <TfrxShapeView Name="Shape2" Left="377,953" Top="0" Width="37,7953" Height="34,01577"/>
+      <TfrxShapeView Name="Shape3" Left="415,7483" Top="0" Width="37,7953" Height="34,01577"/>
+      <TfrxShapeView Name="Shape4" Left="453,5436" Top="0" Width="37,7953" Height="34,01577"/>
+      <TfrxShapeView Name="Shape5" Left="491,3389" Top="0" Width="37,7953" Height="34,01577"/>
+      <TfrxShapeView Name="Shape6" Left="529,1342" Top="0" Width="37,7953" Height="34,01577"/>
+      <TfrxShapeView Name="Shape7" Left="566,9295" Top="0" Width="37,7953" Height="34,01577"/>
+      <TfrxShapeView Name="Shape8" Left="604,7248" Top="0" Width="37,7953" Height="34,01577"/>
+      <TfrxShapeView Name="Shape9" Left="642,5201" Top="0" Width="37,7953" Height="34,01577"/>
+      <TfrxShapeView Name="Shape10" Left="680,3154" Top="0" Width="37,7953" Height="34,01577"/>
+      <TfrxMemoView Name="data_set_report_clientcliente_nome" Left="64,25196118" Top="11,33859" Width="275,90569" Height="18,89765" DataField="est_nome" DataSet="dataSetRelatEst" DataSetName="dataSetRelatEst" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[dataSetRelatEst.&#34;est_nome&#34;]"/>
+      <TfrxMemoView Name="dataSetRelatEstest_id" Left="3,77953" Top="11,33859" Width="56,69295" Height="18,89765" DataField="est_id" DataSet="dataSetRelatEst" DataSetName="dataSetRelatEst" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="[dataSetRelatEst.&#34;est_id&#34;]"/>
+    </TfrxMasterData>
+    <TfrxPageHeader Name="PageHeader1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="147,40159677" Left="0" Top="136,06308" Width="718,1107">
+      <TfrxShapeView Name="Shape25" Left="0" Top="16,11812" Width="60,47243118" Height="113,38582677"/>
+      <TfrxShapeView Name="Shape24" Left="60,47248" Top="16,11812" Width="279,68504913" Height="113,3859"/>
+      <TfrxShapeView Name="Shape23" Left="340,1577" Top="16,11812" Width="377,953" Height="37,03937008"/>
+      <TfrxMemoView Name="Memo4" Left="60,47248" Top="16,11812" Width="279,68504913" Height="113,38582677" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="NOME"/>
+      <TfrxShapeView Name="Shape11" Left="340,1577" Top="53,47248" Width="37,7953" Height="75,5906"/>
+      <TfrxShapeView Name="Shape12" Left="377,953" Top="53,47248" Width="37,7953" Height="75,5906"/>
+      <TfrxShapeView Name="Shape13" Left="415,7483" Top="53,48825" Width="37,7953" Height="75,5906"/>
+      <TfrxShapeView Name="Shape14" Left="453,5436" Top="53,48825" Width="37,7953" Height="75,5906"/>
+      <TfrxShapeView Name="Shape15" Left="491,3389" Top="53,48825" Width="37,7953" Height="75,5906"/>
+      <TfrxShapeView Name="Shape16" Left="529,1342" Top="53,48825" Width="37,7953" Height="75,5906"/>
+      <TfrxShapeView Name="Shape17" Left="566,9295" Top="53,48825" Width="37,7953" Height="75,5906"/>
+      <TfrxShapeView Name="Shape18" Left="604,7248" Top="53,48825" Width="37,7953" Height="75,5906"/>
+      <TfrxShapeView Name="Shape19" Left="642,5201" Top="53,48825" Width="37,7953" Height="75,5906"/>
+      <TfrxShapeView Name="Shape20" Left="680,3154" Top="53,48825" Width="37,7953" Height="75,5906"/>
+      <TfrxMemoView Name="Memo3" Left="0" Top="16,11812" Width="60,47243118" Height="113,38582677" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="ID"/>
+      <TfrxMemoView Name="Memo2" Left="340,1577" Top="15,89765" Width="377,953" Height="37,79527559" Font.Charset="1" Font.Color="0" Font.Height="-16" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="DATAS"/>
+    </TfrxPageHeader>
+    <TfrxMemoView Name="Memo19" Left="560,14997" Top="0" Width="154,96073" Height="18,89765" Font.Charset="1" Font.Color="12632256" Font.Height="-13" Font.Name="@Arial Unicode MS" Font.Style="0" HAlign="haRight" ParentFont="False" Text="jamesschulzm.github.io"/>
+  </TfrxReportPage>
+</TfrxReport>

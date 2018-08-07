@@ -1,0 +1,96 @@
+unit unit_register_student;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Buttons, Vcl.StdCtrls, Vcl.Mask,
+  Vcl.DBCtrls;
+
+type
+  Tfrm_register_student = class(TForm)
+    Label1: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label7: TLabel;
+    txtEstNome: TDBEdit;
+    txtEstCel: TDBEdit;
+    txtEstEmail: TDBEdit;
+    Label9: TLabel;
+    txtEstDataCAd: TDBEdit;
+    Label11: TLabel;
+    txtEstIdade: TDBEdit;
+    SpeedButton1: TSpeedButton;
+    SpeedButton3: TSpeedButton;
+    cbOficinaDesej: TDBComboBox;
+    procedure SpeedButton3Click(Sender: TObject);
+    procedure SpeedButton1Click(Sender: TObject);
+    procedure FormActivate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frm_register_student: Tfrm_register_student;
+
+implementation
+
+{$R *.dfm}
+
+uses unit_data_module;
+
+procedure Tfrm_register_student.FormActivate(Sender: TObject);
+var listaOficinas : TStringList;
+begin
+
+  listaOficinas := TStringList.Create;
+
+  //Adiciona listaOficinas no cbOficinaDesej:
+  with frm_data_module.tabelaOficinas do
+    begin
+      First;
+      while not Eof do
+        begin
+          listaOficinas.Add((FieldByName('ofi_nome').AsString)
+          + ' - ' + (FieldByName('ofi_data_ini').AsString)
+          + ' - ' + (FieldByName('ofi_hor_ini').AsString)
+          +  '-'  + (FieldByName('ofi_hor_fim').AsString)
+          + ' - ' + (FieldByName('ofi_local').AsString)
+          + ' - ' + (FieldByName('ofi_bol_resp').AsString));
+          Next;
+        end;
+    end;
+
+  cbOficinaDesej.Items := listaOficinas;
+  listaOficinas.Free;
+
+  //Pega a data atual:
+  frm_data_module.tabelaEstudantesest_data_cad.Value := date;
+
+end;
+
+procedure Tfrm_register_student.SpeedButton1Click(Sender: TObject);
+begin
+
+  //Salva a informacao na tabela:
+  frm_data_module.tabelaEstudantes.Post;
+
+  //Mostra uma mensagem de sucesso:
+  ShowMessage('Cadastro realizado com sucesso.');
+  frm_data_module.tabelaEstudantes.Active := False;
+
+  //Permite uma nova insercao na tabela:
+  frm_data_module.tabelaEstudantes.Active := True;
+  frm_data_module.tabelaEstudantes.Insert;
+
+end;
+
+procedure Tfrm_register_student.SpeedButton3Click(Sender: TObject);
+begin
+  frm_data_module.tabelaEstudantes.Cancel;
+  close;
+end;
+
+end.
